@@ -1,0 +1,299 @@
+.w-8p {
+  width: 80px;
+  height: 80px;
+}
+/* //text css */
+.lh-15 {
+  line-height: 15px;
+}
+.text-shadow-1 {
+  text-shadow: 1px 1px 1px #333;
+}
+/* background */
+/* background-gradient */
+.bg-blue-gradient {
+  background: linear-gradient(#0575E6, #021B79);
+}
+.bg-blue-lake-gradient{
+  background: linear-gradient(#093028, #237A57);
+}
+.bg-green-gradient {
+  background: linear-gradient(#000000,#0f9b0f);
+}
+.bg-gray-gradient {
+  background: linear-gradient(#3C3B3F,#605C3C);
+}
+.bg-purple-gradient {
+  background: linear-gradient(#0f0c29, #302b63,#24243e);
+}
+.bg-red-gradient {
+  background: linear-gradient(#ED213A, #93291E);
+}
+.bg-moonlit-gradient {
+  background: linear-gradient(#0F2027, #203A43, #2C5364);
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(217deg, #1f1f1f,#434343,#1f1f1f 70.71%);
+}
+.bg-dark-orange-gradient {
+  background: linear-gradient(#BA8B02, #181818);
+}
+.bg-light-orange-gradient {
+  background: linear-gradient(#FFB75E, #ED8F03);
+}
+/* gradient end */
+/* opacity  */
+.op-1 {
+  opacity: 0.1;
+}
+.op-2 {
+  opacity: 0.2;
+}
+.op-3 {
+  opacity: 0.3;
+}
+.op-4 {
+  opacity: 0.4;
+}
+.op-5 {
+  opacity: 0.5;
+}
+.op-6 {
+  opacity: 0.6;
+}
+.op-7 {
+  opacity: 0.7;
+}
+.op-8 {
+  opacity: 0.8;
+}
+.op-9 {
+  opacity: 0.9;
+}
+/* height css */
+.h-100 {
+  height: 100px;
+}
+.h-200 {
+  height: 200px;
+}
+.h-300 {
+  height: 300px;
+}
+.h-400 {
+  height: 400px;
+}
+.h-500 {
+  height: 500px;
+}
+.h-600 {
+  height: 600px;
+}
+.h-700 {
+  height: 700px;
+}
+.h-800 {
+  height: 800px;
+}
+.mh-100 {
+  min-height: 100px;
+}
+.mh-200 {
+  min-height: 100px;
+}
+.mh-300 {
+  min-height: 100px;
+}
+.mh-400 {
+  min-height: 100px;
+}
+.mh-500 {
+  min-height: 100px;
+}
+.mh-600 {
+  min-height: 100px;
+}
+.mh-700 {
+  min-height: 100px;
+}
+.mh-800 {
+  min-height: 100px;
+}
+.mh-900 {
+  min-height: 100px;
+}
+/* width */
+.mw-50{
+  width: 50px;
+}
+.mw-100{
+  width: 100px;
+}
+.mw-150{
+  width: 150px;
+}
+.mw-200{
+  width: 200px;
+}
+.mw-250{
+  width: 250px;
+}
+.mw-300{
+  width: 350px;
+}
+.mw-400{
+  width: 400px;
+}
+.mw-450{
+  width: 450px;
+}
+.mw-500{
+  width: 500px;
+}
+.mw-600{
+  width: 600px;
+}
+
+/* custom width */
+.wc-10 {
+  width: 10px;
+}
+.wc-20 {
+  width: 20px;
+}
+.wc-30 {
+  width: 30px;
+}
+.wc-40 {
+  width: 40px;
+}
+.wc-50 {
+  width: 50px;
+}
+.wc-60 {
+  width: 60px;
+}
+.wc-70 {
+  width: 70px;
+}
+.wc-80 {
+  width: 80px;
+}
+.wc-90 {
+  width: 90px;
+}
+.wc-100 {
+  width: 100px;
+}
+.fs-7 {
+  font-size: 0.75rem;
+}
+.fs-8 {
+  font-size: 0.5rem;
+}
+/* box shadow */
+.effect-30-white {
+  position: relative;
+  overflow: hidden;
+}
+.effect-30-white::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 200%;
+  left:100px;
+  border-right: 30px solid rgba(255,255,255,0.5);
+  transform: rotate(20deg);
+  transition: .5s ease-in;
+}
+.effect-30-white:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  left:-120%;
+  border-right: 30px solid rgba(255,255,255,0.5);
+  transform: rotate(20deg);
+  transition: .5s ease-out;
+}
+.effect-no {
+  position: relative;
+  overflow: hidden;
+}
+.effect-no::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 0%;
+  height: 200%;
+  left:-10%;
+  background-color: rgba(254,250,250,0.3);
+  transition: .5s ease-in;
+}
+.effect-no:hover::before {
+  content: '';
+  width: 120%;
+  transition: 2s ease-out;
+}
+
+.shadow-dark-5 {
+  box-shadow : 5px 5px 5px #333;
+}
+.shadow-gray-10 {
+  box-shadow: 0 0 10px #c3c3c3;
+}
+.sl-none {
+  user-select: none;
+}
+.hover-scale {
+  transform: scale(1);
+  transition: 0.3s ease-in;
+}
+.hover-scale:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease-out;
+}
+
+/* background-image css */
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: cover;
+}
+.bg-no-r {
+  background-repeat: no-repeat;
+}
+
+/* border */
+.br-3 {
+  border-radius: 3px;
+}
+.br-5 {
+  border-radius: 5px;
+}
+.br-10 {
+  border-radius: 10px;
+}
+.br-15 {
+  border-radius: 15px;
+}
+.br-20 {
+  border-radius: 20px;
+}
+.br-30 {
+  border-radius: 30px;
+}
+.br-40 {
+  border-radius: 40px;
+}
+.c-active {
+  display: block;
+  transition: .5s ease-in;
+}
+.c-inactive {
+  display: none;
+  transition: .5s ease-out;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./skitter.css" />
+    <script src="./jquery-2.1.1.min.js"></script>
+    <script src="./jquery.easing.1.3.js"></script>
+    <script src="./jquery.skitter.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.skitter-large').skitter({
+          label: true,
+          theme: 'square',
+          velocity: 1,
+          interval: 1500,
+          animation: '',
+          numbers: false,
+          image_i: 3,
+          is_animating: true,
+          // Randomly sliders
+          show_randomly: true,
+          // Navigation with thumbs
+          thumbs: true,
+          // Hide numbers and navigation
+          hide_tools: false,
+          // Fullscreen mode
+          fullscreen: false,
+          // Navigation with dots
+          dots: true,
+          // Final opacity of elements in hide_tools
+          opacity_elements: 0.75,
+          // Interval animation hover elements hide_tools
+          interval_in_elements: 200,
+          // Interval animation out elements hide_tools
+          interval_out_elements: 300,
+          // Onload Callback
+          onLoad: null,
+          // Preview with dots
+          preview: true,
+
+          // Focus slideshow
+          focus: true,
+
+          // Focus active (internal)
+          foucs_active: false,
+
+          // Option play/pause manually
+          controls: false,
+
+          // Displays progress bar
+          progressbar: false,
+
+          // CSS progress bar
+          progressbar_css: {},
+
+          // Is paused (internal)
+          is_paused: false,
+
+          // Is blur (internal)
+          is_blur: false,
+
+          // Is paused time (internal)
+          is_paused_time: false,
+
+          // Time start (internal)
+          time_start: 0,
+
+          // Elapsed time (internal)
+          elapsedTime: 0,
+
+          // Stop animation to move mouse over it.
+          stop_over: false,
+          enable_navigation_keys: false,
+          with_animations: [],
+
+          mouseOverButton: null,
+          mouseOutButton: null,
+          // Sets whether the slideshow will start automatically
+          auto_play: true,
+          // Label animation type
+          label_animation: 'slideUp',
+          // Theme
+          theme: null,
+
+          responsive: {
+            small: {
+              animation: 'fade',
+              max_width: 768,
+            },
+            medium: {
+              max_width: 1024,
+            },
+          },
+        })
+      })
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="skitter-large-box">
+      <div class="skitter skitter-large with-dots skitter-minimalist">
+        <ul>
+          <li>
+            <a href="#cubeRandom" style="position: relative">
+              <h1 style="position:absolute; z-index:100">sdfsdfsdfdfsaasf</h1>
+              <img src="./001.jpg" class="cubeR" />
+            </a>
+            <div class="label_text">
+              <p>cube</p>
+            </div>
+          </li>
+          <li>
+            <a href="#cubeRandom">
+              <img src="./002.jpg" class="cubeRandom" />
+              <h1>sdfsdfsdfdfsaasf</h1>
+            </a>
+            <div class="label_text">
+              <p>cubeRandom</p>
+            </div>
+          </li>
+          <li>
+            <a href="#block">
+              <img src="./003.jpg" class="blockRandom" />
+              <h1>sdfsdfsdfdfsaasf</h1>
+            </a>
+            <div class="label_text">
+              <p>block</p>
+            </div>
+          </li>
+          <li>
+            <a href="#block">
+              <img src="./003.jpg" class="block" />
+              <h1>sdfsdfsdfdfsaasf</h1>
+            </a>
+            <div class="label_text">
+              <p>block</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

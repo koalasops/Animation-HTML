@@ -1,0 +1,191 @@
+.back-sign-loader {
+  width: 1px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
+  position: absolute;
+  left: 75px;
+  background: currentColor;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+.back-sign-loader::after,
+.back-sign-loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 1px;
+  height: 20px;
+  background: currentColor;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  animation: animloader1 0.3s  0.45s  linear infinite alternate;
+}
+.back-sign-loader::before {
+  left: -5px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0% {
+    height: 40px;
+    transform: translateY(0);
+  }
+  100% {
+    height: 10px;
+    transform: translateY(30px);
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4.8px;
+  }
+}
+
+/* telephone back loader */
+.back-tel-loader {
+  position: absolute;
+  top: 58px;
+  left: 81px;
+  width: 63px;
+  height: 63px;
+  border: 2px solid rgb(14, 168, 91);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.back-tel-loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #21a7c9;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+/* line back loader square fill */
+.line-back-loader {
+  position: absolute;
+  top:53px;
+  left:138px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  color: rgb(0, 66, 85, 0.5);
+  border: 1px solid #fff;
+  border-radius: 12px;
+  box-sizing: border-box;
+  animation: fill 2s linear infinite alternate;
+}
+
+@keyframes fill {
+  0% {
+    box-shadow: 0 0  inset;
+  }
+  100% {
+    box-shadow: 0 -70px inset;
+  }
+}
+
+/* animation */
+.up-down-rotate {
+  position: relative;
+  animation: upTodown 3s linear infinite alternate;
+}
+@keyframes upTodown {
+  0% {
+    transform: translate(0, 0) rotate(0) ;
+  }
+  100% {
+    transform: translate(50px, 30px) rotate(5deg) ;
+  }
+}
+/* car animation in navar */
+.car-animation {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.car-animation>div {
+  width: 100%;
+  height: 100%;
+}
+.car-animation>div .car1 {
+  position: absolute;
+  bottom: -15px;
+  left:  0;
+  z-index: 10;
+  animation: left-right 10s ease-in infinite reverse
+}
+.car-animation>div .car2 {
+  position: absolute;
+  bottom: -5px;
+  left:  0;
+  z-index: 10;
+  animation: left-right 20s ease-in infinite reverse
+}
+.car-animation>div .car3 {
+  position: absolute;
+  bottom: -5px;
+  left:  0;
+  z-index: 10;
+  animation: left-right 15s ease-in infinite reverse
+}
+.car-animation>div .car4 {
+  position: absolute;
+  bottom: -10px;
+  left:  0;
+  z-index: 10;
+  animation: left-right 14s ease-in infinite reverse
+}
+.car-animation>div .benz-ani-car {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+}
+.car-animation>div .benz-ani-car .benz-mark{
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+.car-animation>div .benz-ani-car{
+  position: absolute;
+  bottom: -10px;
+  left:  0;
+  z-index: 10;
+  animation: left-right 8s ease-in infinite reverse
+}
+@keyframes left-right {
+  0% {
+    left :150%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
